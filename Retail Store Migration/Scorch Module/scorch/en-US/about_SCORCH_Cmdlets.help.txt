@@ -1,0 +1,22 @@
+TOPIC
+    about_SCORCH_Cmdlets
+
+SHORT DESCRIPTION
+    Provides background information on the Orchestrator Webservice
+    
+LONG DESCRIPTION
+    The Orchestrator web service is a restful webservice. This PowerShell
+    module is built to interact with it. The module is built on top of
+    Orchestrator.Interop.dll
+
+SEE ALSO
+    Start-SCORunbook
+    Get-SCOSubfolder
+    Stop-SCOJob
+    Get-SCORunbookServer
+    Get-SCOJob
+    New-SCOWebserverURL
+    Get-SCOEvent
+    Get-SCOMonitorRunbook
+    Get-SCORunbook
+ 
