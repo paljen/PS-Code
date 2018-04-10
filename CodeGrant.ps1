@@ -1,6 +1,5 @@
 function Get-AMRestAPIAuthorizationCodeGrant {
 
-
     [CmdletBinding()]
     [OutputType([System.String])]
    
@@ -33,7 +32,7 @@ function Get-AMRestAPIAuthorizationCodeGrant {
         $authContext = [Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext]::new("$Authority/$tenant")
 
         if($Credential) {
-
+        
             $userCred = [Microsoft.IdentityModel.Clients.ActiveDirectory.UserCredential]::new($credential.UserName,$credential.Password)
             $authToken = $authContext.AcquireToken($ResourceUri, $ApplicationId, $userCred)
         }
